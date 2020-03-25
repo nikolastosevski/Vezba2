@@ -1,0 +1,23 @@
+Link: https://github.com/nikolastosevski/Vezba2
+
+Komande(Pored osnovnih sa prve vezbe git status,add,commit i ostalo): 
+
+{lokalniNaziv} - Ugalvom 'origin'...
+
+git remote add {lokalniNaziv} {link} -Dodavanje udaljenog repozitorijuma
+git remote -v -Pregled svih udaljenih repozitorijuma
+git remote rm {lokalniNaziv} -Brisanje udaljenog repozitorijuma
+
+git pull {link} ili {lokalniNaziv} -Dodavanje fajlova sa naznacenog udaljenog repozitorijum
+git pull -Bez parametara ako smo sve uskladili sinhronizuje fajlove sa udaljenog i lokalnog rep.
+
+git fatch -Samo preuzima fajlove ali ne pravi granu vec mi moramo rucno da napravimo granu i sinhornizujemo sa ovim udalj. granom
+
+git push {lokalniNaziv} -Ako Eksplicitno naznacavamo sta da se sinhronizuje, koji udaljeni repozitorijum
+git push -Uploaduje sve promene u lokalnom na udaljeni repozitorijum
+git push --set-upstream -Trenutna grana na kojoj smo ce biti ta koja ce pratiti promene
+git push -u {lokalniNaziv} {grana} -Odredjuemo koja grana prati promene koje grane na udaljenom repozitorijumu
+
+git merge {lokalniNaziv} {grana} ili {drugiLokalniNaziv} -Spajanje dve grane na udaljenom rep. ili uskladjivanje sadrzaja grane i udaljene grane
+
+git push -u {lokalniNaziv} {novaGranaKojuSmoNapravili} -Pravi novu granu na udaljenom rep. i sinhronizuje je sa granom koju odredimo
